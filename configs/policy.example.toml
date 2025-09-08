@@ -1,0 +1,64 @@
+# Arista Engine Policy Configuration
+# This file defines safety rules to prevent dangerous operations
+
+[policy]
+# Enable policy enforcement
+enabled = true
+
+# Default action for unmatched requests
+default_action = "allow"
+
+# Rules are processed in order, first match wins
+[[rules]]
+id = "deny-config-terminal"
+name = "Deny Configuration Terminal Access"
+description = "Prevent access to configuration terminal mode"
+resource = "eapi"
+action = "runCmds"
+conditions = { path = "/command-api", bodyContains = "configure terminal" }
+effect = "deny"
+
+[[rules]]
+id = "deny-write-memory"
+name = "Deny Write Memory"
+description = "Prevent saving configuration to memory"
+resource = "eapi"
+action = "runCmds"
+conditions = { path = "/command-api", bodyContains = "write memory" }
+effect = "deny"
+
+[[rules]]
+id = "deny-reload"
+name = "Deny Reload Commands"
+description = "Prevent device reload/reboot commands"
+resource = "eapi"
+action = "runCmds"
+conditions = { path = "/command-api", bodyContains = "reload" }
+effect = "deny"
+
+[[rules]]
+id = "deny-delete-operations"
+name = "Deny Delete Operations"
+description = "Prevent delete operations on CloudVision"
+resource = "cloudvision"
+action = "delete"
+conditions = { method = "DELETE" }
+effect = "deny"
+
+[[rules]]
+id = "allow-read-operations"
+name = "Allow Read Operations"
+description = "Allow all read operations"
+resource = "*"
+action = "read"
+conditions = { method = "GET" }
+effect = "allow"
+
+[[rules]]
+id = "allow-show-commands"
+name = "Allow Show Commands"
+description = "Allow all show commands"
+resource = "eapi"
+action = "runCmds"
+conditions = { path = "/command-api", bodyContains = "show " }
+effect = "allow"

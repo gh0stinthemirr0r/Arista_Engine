@@ -1,0 +1,460 @@
+{
+  "eapi": {
+    "show_version": {
+      "title": "Show Version",
+      "description": "Display system version and hardware information",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show version"]
+      },
+      "category": "System Information",
+      "tags": ["version", "system", "hardware"]
+    },
+    "show_interfaces": {
+      "title": "Show Interfaces",
+      "description": "Display interface status and configuration",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show interfaces"]
+      },
+      "category": "Interface Management",
+      "tags": ["interfaces", "status", "configuration"]
+    },
+    "show_interfaces_status": {
+      "title": "Show Interface Status",
+      "description": "Display interface status summary",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show interfaces status"]
+      },
+      "category": "Interface Management",
+      "tags": ["interfaces", "status"]
+    },
+    "show_running_config": {
+      "title": "Show Running Configuration",
+      "description": "Display current running configuration",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show running-config"]
+      },
+      "category": "Configuration",
+      "tags": ["config", "running", "current"]
+    },
+    "show_startup_config": {
+      "title": "Show Startup Configuration",
+      "description": "Display startup configuration",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show startup-config"]
+      },
+      "category": "Configuration",
+      "tags": ["config", "startup"]
+    },
+    "show_vlan": {
+      "title": "Show VLANs",
+      "description": "Display VLAN configuration and status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show vlan"]
+      },
+      "category": "VLAN Management",
+      "tags": ["vlan", "switching"]
+    },
+    "show_spanning_tree": {
+      "title": "Show Spanning Tree",
+      "description": "Display spanning tree protocol status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show spanning-tree"]
+      },
+      "category": "Spanning Tree",
+      "tags": ["stp", "spanning-tree", "redundancy"]
+    },
+    "show_lldp_neighbors": {
+      "title": "Show LLDP Neighbors",
+      "description": "Display LLDP neighbor information",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show lldp neighbors"]
+      },
+      "category": "Discovery",
+      "tags": ["lldp", "neighbors", "discovery"]
+    },
+    "show_lldp_neighbors_detail": {
+      "title": "Show LLDP Neighbors Detail",
+      "description": "Display detailed LLDP neighbor information",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show lldp neighbors detail"]
+      },
+      "category": "Discovery",
+      "tags": ["lldp", "neighbors", "detail"]
+    },
+    "show_ip_route": {
+      "title": "Show IP Routes",
+      "description": "Display IP routing table",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show ip route"]
+      },
+      "category": "Routing",
+      "tags": ["routing", "ip", "routes"]
+    },
+    "show_ip_route_summary": {
+      "title": "Show IP Route Summary",
+      "description": "Display IP routing table summary",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show ip route summary"]
+      },
+      "category": "Routing",
+      "tags": ["routing", "ip", "summary"]
+    },
+    "show_bgp_summary": {
+      "title": "Show BGP Summary",
+      "description": "Display BGP neighbor summary",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show bgp summary"]
+      },
+      "category": "BGP",
+      "tags": ["bgp", "routing", "neighbors"]
+    },
+    "show_bgp_neighbors": {
+      "title": "Show BGP Neighbors",
+      "description": "Display BGP neighbor details",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show bgp neighbors"]
+      },
+      "category": "BGP",
+      "tags": ["bgp", "neighbors", "detail"]
+    },
+    "show_mlag": {
+      "title": "Show MLAG",
+      "description": "Display MLAG configuration and status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show mlag"]
+      },
+      "category": "MLAG",
+      "tags": ["mlag", "redundancy", "clustering"]
+    },
+    "show_mlag_detail": {
+      "title": "Show MLAG Detail",
+      "description": "Display detailed MLAG information",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show mlag detail"]
+      },
+      "category": "MLAG",
+      "tags": ["mlag", "detail", "redundancy"]
+    },
+    "show_environment": {
+      "title": "Show Environment",
+      "description": "Display environmental information (temperature, power, etc.)",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show environment"]
+      },
+      "category": "System Information",
+      "tags": ["environment", "temperature", "power"]
+    },
+    "show_environment_cooling": {
+      "title": "Show Environment Cooling",
+      "description": "Display cooling system status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show environment cooling"]
+      },
+      "category": "System Information",
+      "tags": ["environment", "cooling", "fans"]
+    },
+    "show_environment_power": {
+      "title": "Show Environment Power",
+      "description": "Display power supply status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show environment power"]
+      },
+      "category": "System Information",
+      "tags": ["environment", "power", "psu"]
+    },
+    "show_interfaces_counters": {
+      "title": "Show Interface Counters",
+      "description": "Display interface statistics and counters",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show interfaces counters"]
+      },
+      "category": "Interface Management",
+      "tags": ["interfaces", "counters", "statistics"]
+    },
+    "show_interfaces_counters_errors": {
+      "title": "Show Interface Counter Errors",
+      "description": "Display interface error counters",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show interfaces counters errors"]
+      },
+      "category": "Interface Management",
+      "tags": ["interfaces", "errors", "counters"]
+    },
+    "show_system": {
+      "title": "Show System",
+      "description": "Display system information and uptime",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show system"]
+      },
+      "category": "System Information",
+      "tags": ["system", "uptime", "information"]
+    },
+    "show_processes": {
+      "title": "Show Processes",
+      "description": "Display running processes",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show processes"]
+      },
+      "category": "System Information",
+      "tags": ["processes", "system", "cpu"]
+    },
+    "show_memory": {
+      "title": "Show Memory",
+      "description": "Display memory usage information",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show memory"]
+      },
+      "category": "System Information",
+      "tags": ["memory", "system", "usage"]
+    },
+    "show_logging": {
+      "title": "Show Logging",
+      "description": "Display logging configuration",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show logging"]
+      },
+      "category": "System Information",
+      "tags": ["logging", "configuration"]
+    },
+    "show_ntp": {
+      "title": "Show NTP",
+      "description": "Display NTP configuration and status",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show ntp"]
+      },
+      "category": "System Information",
+      "tags": ["ntp", "time", "synchronization"]
+    },
+    "show_clock": {
+      "title": "Show Clock",
+      "description": "Display system clock",
+      "method": "runCmds",
+      "path": "/command-api",
+      "body": {
+        "version": 1,
+        "format": "json",
+        "autoComplete": true,
+        "cmds": ["show clock"]
+      },
+      "category": "System Information",
+      "tags": ["clock", "time", "date"]
+    }
+  },
+  "cloudvision": {
+    "get_devices": {
+      "title": "Get Devices",
+      "description": "Retrieve all devices from CloudVision inventory",
+      "method": "GET",
+      "path": "/api/resources/inventory/v1/Devices",
+      "body": {},
+      "category": "Inventory",
+      "tags": ["devices", "inventory", "management"]
+    },
+    "get_events": {
+      "title": "Get Events",
+      "description": "Retrieve events from CloudVision",
+      "method": "GET",
+      "path": "/api/resources/event/v1/Events",
+      "body": {},
+      "category": "Events",
+      "tags": ["events", "monitoring", "alerts"]
+    },
+    "get_configlets": {
+      "title": "Get Configlets",
+      "description": "Retrieve all configlets",
+      "method": "GET",
+      "path": "/api/resources/configlet/v1/Configlets",
+      "body": {},
+      "category": "Configuration",
+      "tags": ["configlets", "configuration", "templates"]
+    },
+    "get_tags": {
+      "title": "Get Tags",
+      "description": "Retrieve all tags",
+      "method": "GET",
+      "path": "/api/resources/tag/v2/Tags",
+      "body": {},
+      "category": "Tagging",
+      "tags": ["tags", "organization", "metadata"]
+    },
+    "get_workspaces": {
+      "title": "Get Workspaces",
+      "description": "Retrieve all workspaces",
+      "method": "GET",
+      "path": "/api/resources/workspace/v1/Workspaces",
+      "body": {},
+      "category": "Workspace",
+      "tags": ["workspaces", "organization", "management"]
+    },
+    "get_dashboards": {
+      "title": "Get Dashboards",
+      "description": "Retrieve all dashboards",
+      "method": "GET",
+      "path": "/api/resources/dashboard/v1/Dashboards",
+      "body": {},
+      "category": "Dashboard",
+      "tags": ["dashboards", "monitoring", "visualization"]
+    },
+    "get_alerts": {
+      "title": "Get Alerts",
+      "description": "Retrieve all alerts",
+      "method": "GET",
+      "path": "/api/resources/alert/v1/Alerts",
+      "body": {},
+      "category": "Alerts",
+      "tags": ["alerts", "monitoring", "notifications"]
+    },
+    "get_change_controls": {
+      "title": "Get Change Controls",
+      "description": "Retrieve all change controls",
+      "method": "GET",
+      "path": "/api/resources/changecontrol/v1/ChangeControls",
+      "body": {},
+      "category": "Change Management",
+      "tags": ["change", "control", "workflow"]
+    },
+    "get_software_management": {
+      "title": "Get Software Management",
+      "description": "Retrieve software management information",
+      "method": "GET",
+      "path": "/api/resources/softwaremanagement/v1/SoftwareManagements",
+      "body": {},
+      "category": "Software Management",
+      "tags": ["software", "updates", "management"]
+    },
+    "get_lifecycle": {
+      "title": "Get Lifecycle",
+      "description": "Retrieve lifecycle information",
+      "method": "GET",
+      "path": "/api/resources/lifecycle/v1/Lifecycles",
+      "body": {},
+      "category": "Lifecycle",
+      "tags": ["lifecycle", "management", "status"]
+    }
+  }
+}

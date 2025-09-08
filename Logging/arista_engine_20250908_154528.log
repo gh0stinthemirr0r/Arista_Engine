@@ -1,0 +1,2 @@
+{"level":"info","timestamp":"2025-09-08T15:45:28.819-0700","caller":"Arista_Engine/app.go:58","msg":"Initializing database","path":"data.db"}
+{"level":"info","timestamp":"2025-09-08T15:45:28.832-0700","caller":"Arista_Engine/app.go:64","msg":"Database initialized successfully"}

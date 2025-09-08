@@ -1,0 +1,26 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Arista_Engine",
+  "outputfilename": "Arista_Engine",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Aaron Stovall",
+    "email": "aaron@stovall.dev"
+  },
+  "info": {
+    "productName": "Arista Engine",
+    "productVersion": "1.0.0",
+    "copyright": "© Aaron Stovall",
+    "comments": "A Cyberpunk-Themed Arista Networks API GUI"
+  },
+  "icon": "build/appicon.ico",
+  "windows": {
+    "icon": "build/appicon.ico"
+  },
+  "nsisType": "multiple",
+  "obfuscated": false,
+  "wailsjsdir": "./frontend/wailsjs"
+}

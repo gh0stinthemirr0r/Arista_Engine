@@ -1,0 +1,5 @@
+{"level":"info","timestamp":"2025-09-08T14:43:27.593-0700","caller":"Arista_Engine/app.go:95","msg":"Created directory","dir":"Logging"}
+{"level":"info","timestamp":"2025-09-08T14:43:27.594-0700","caller":"Arista_Engine/app.go:95","msg":"Created directory","dir":"Reports"}
+{"level":"info","timestamp":"2025-09-08T14:43:27.594-0700","caller":"Arista_Engine/app.go:95","msg":"Created directory","dir":"Exports"}
+{"level":"info","timestamp":"2025-09-08T14:43:27.599-0700","caller":"Arista_Engine/app.go:119","msg":"API catalog loaded successfully"}
+{"level":"info","timestamp":"2025-09-08T14:43:27.600-0700","caller":"Arista_Engine/app.go:123","msg":"Arista Engine started successfully"}

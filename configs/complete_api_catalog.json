@@ -1,0 +1,500 @@
+{
+  "eapi": {
+    "show_version": {
+      "id": "eapi_show_version_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display system version and hardware information",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "System Information",
+      "tags": ["version", "system", "hardware"]
+    },
+    "show_interfaces": {
+      "id": "eapi_show_interfaces_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display interface status and configuration",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "Interface Management",
+      "tags": ["interfaces", "status", "configuration"]
+    },
+    "show_running_config": {
+      "id": "eapi_show_running_config_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display current running configuration",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "Configuration",
+      "tags": ["config", "running", "current"]
+    },
+    "show_vlan": {
+      "id": "eapi_show_vlan_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display VLAN configuration and status",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "VLAN Management",
+      "tags": ["vlan", "switching"]
+    },
+    "show_bgp_summary": {
+      "id": "eapi_show_bgp_summary_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display BGP neighbor summary",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "BGP",
+      "tags": ["bgp", "routing", "neighbors"]
+    },
+    "show_mlag": {
+      "id": "eapi_show_mlag_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display MLAG configuration and status",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "MLAG",
+      "tags": ["mlag", "redundancy", "clustering"]
+    },
+    "show_environment": {
+      "id": "eapi_show_environment_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display environmental information (temperature, power, etc.)",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "System Information",
+      "tags": ["environment", "temperature", "power"]
+    },
+    "show_lldp_neighbors": {
+      "id": "eapi_show_lldp_neighbors_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display LLDP neighbor information",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "Discovery",
+      "tags": ["lldp", "neighbors", "discovery"]
+    },
+    "show_ip_route": {
+      "id": "eapi_show_ip_route_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display IP routing table",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "Routing",
+      "tags": ["routing", "ip", "routes"]
+    },
+    "show_spanning_tree": {
+      "id": "eapi_show_spanning_tree_GET",
+      "service": "eapi",
+      "method": "runCmds",
+      "path": "/command-api",
+      "description": "Display spanning tree protocol status",
+      "params": ["version", "cmds", "format", "autoComplete"],
+      "category": "Spanning Tree",
+      "tags": ["stp", "spanning-tree", "redundancy"]
+    }
+  },
+  "cloudvision": {
+    "get_devices": {
+      "id": "cloudvision_get_devices_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/inventory/v1/Devices",
+      "description": "Retrieve all devices from CloudVision inventory",
+      "params": ["limit", "offset", "filter"],
+      "category": "Inventory",
+      "tags": ["devices", "inventory", "management"]
+    },
+    "get_events": {
+      "id": "cloudvision_get_events_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/event/v1/Events",
+      "description": "Retrieve events from CloudVision",
+      "params": ["limit", "offset", "filter", "startTime", "endTime"],
+      "category": "Events",
+      "tags": ["events", "monitoring", "alerts"]
+    },
+    "get_configlets": {
+      "id": "cloudvision_get_configlets_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/configlet/v1/Configlets",
+      "description": "Retrieve all configlets",
+      "params": ["limit", "offset", "filter"],
+      "category": "Configuration",
+      "tags": ["configlets", "configuration", "templates"]
+    },
+    "get_tags": {
+      "id": "cloudvision_get_tags_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/tag/v2/Tags",
+      "description": "Retrieve all tags",
+      "params": ["limit", "offset", "filter"],
+      "category": "Tagging",
+      "tags": ["tags", "organization", "metadata"]
+    },
+    "get_workspaces": {
+      "id": "cloudvision_get_workspaces_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/workspace/v1/Workspaces",
+      "description": "Retrieve all workspaces",
+      "params": ["limit", "offset", "filter"],
+      "category": "Workspace",
+      "tags": ["workspaces", "organization", "management"]
+    },
+    "get_dashboards": {
+      "id": "cloudvision_get_dashboards_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/dashboard/v1/Dashboards",
+      "description": "Retrieve all dashboards",
+      "params": ["limit", "offset", "filter"],
+      "category": "Dashboard",
+      "tags": ["dashboards", "monitoring", "visualization"]
+    },
+    "get_alerts": {
+      "id": "cloudvision_get_alerts_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/alert/v1/Alerts",
+      "description": "Retrieve all alerts",
+      "params": ["limit", "offset", "filter", "severity"],
+      "category": "Alerts",
+      "tags": ["alerts", "monitoring", "notifications"]
+    },
+    "get_change_controls": {
+      "id": "cloudvision_get_change_controls_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/changecontrol/v1/ChangeControls",
+      "description": "Retrieve all change controls",
+      "params": ["limit", "offset", "filter", "status"],
+      "category": "Change Management",
+      "tags": ["change", "control", "workflow"]
+    },
+    "get_software_management": {
+      "id": "cloudvision_get_software_management_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/softwaremanagement/v1/SoftwareManagements",
+      "description": "Retrieve software management information",
+      "params": ["limit", "offset", "filter"],
+      "category": "Software Management",
+      "tags": ["software", "updates", "management"]
+    },
+    "get_lifecycle": {
+      "id": "cloudvision_get_lifecycle_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/lifecycle/v1/Lifecycles",
+      "description": "Retrieve lifecycle information",
+      "params": ["limit", "offset", "filter"],
+      "category": "Lifecycle",
+      "tags": ["lifecycle", "management", "status"]
+    },
+    "get_studio": {
+      "id": "cloudvision_get_studio_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/studio/v1/Studios",
+      "description": "Retrieve studio information",
+      "params": ["limit", "offset", "filter"],
+      "category": "Studio",
+      "tags": ["studio", "design", "topology"]
+    },
+    "get_connectivity_monitor": {
+      "id": "cloudvision_get_connectivity_monitor_GET",
+      "service": "cloudvision",
+      "method": "GET",
+      "path": "/api/resources/connectivitymonitor/v1/ConnectivityMonitors",
+      "description": "Retrieve connectivity monitor information",
+      "params": ["limit", "offset", "filter"],
+      "category": "Monitoring",
+      "tags": ["connectivity", "monitoring", "network"]
+    }
+  },
+  "eos_rest": {
+    "aaa_tacacs_get": {
+      "id": "eos_rest_aaa_tacacs_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/aaa-tacacs",
+      "description": "Get TACACS+ configuration",
+      "params": [],
+      "category": "Authentication",
+      "tags": ["aaa", "tacacs", "authentication"]
+    },
+    "aaa_tacacs_post": {
+      "id": "eos_rest_aaa_tacacs_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/aaa-tacacs",
+      "description": "Create TACACS+ configuration",
+      "params": ["name", "host", "port", "key"],
+      "category": "Authentication",
+      "tags": ["aaa", "tacacs", "authentication"]
+    },
+    "access_lists_get": {
+      "id": "eos_rest_access_lists_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/access-lists",
+      "description": "Get access lists",
+      "params": [],
+      "category": "Security",
+      "tags": ["acl", "access-list", "security"]
+    },
+    "access_lists_post": {
+      "id": "eos_rest_access_lists_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/access-lists",
+      "description": "Create access list",
+      "params": ["name", "rules"],
+      "category": "Security",
+      "tags": ["acl", "access-list", "security"]
+    },
+    "interfaces_get": {
+      "id": "eos_rest_interfaces_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/interfaces",
+      "description": "Get interface information",
+      "params": [],
+      "category": "Interface Management",
+      "tags": ["interfaces", "ports", "status"]
+    },
+    "interfaces_put": {
+      "id": "eos_rest_interfaces_put_PUT",
+      "service": "eos_rest",
+      "method": "PUT",
+      "path": "/interfaces/{interface}",
+      "description": "Update interface configuration",
+      "params": ["interface", "description", "shutdown"],
+      "category": "Interface Management",
+      "tags": ["interfaces", "configuration", "ports"]
+    },
+    "vlans_get": {
+      "id": "eos_rest_vlans_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/vlans",
+      "description": "Get VLAN information",
+      "params": [],
+      "category": "VLAN Management",
+      "tags": ["vlans", "switching", "layer2"]
+    },
+    "vlans_post": {
+      "id": "eos_rest_vlans_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/vlans",
+      "description": "Create VLAN",
+      "params": ["vlan-id", "name", "description"],
+      "category": "VLAN Management",
+      "tags": ["vlans", "switching", "layer2"]
+    },
+    "bgp_get": {
+      "id": "eos_rest_bgp_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/bgp",
+      "description": "Get BGP configuration",
+      "params": [],
+      "category": "BGP",
+      "tags": ["bgp", "routing", "protocol"]
+    },
+    "bgp_post": {
+      "id": "eos_rest_bgp_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/bgp",
+      "description": "Create BGP configuration",
+      "params": ["asn", "router-id", "neighbors"],
+      "category": "BGP",
+      "tags": ["bgp", "routing", "protocol"]
+    },
+    "ospf_get": {
+      "id": "eos_rest_ospf_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/ospf",
+      "description": "Get OSPF configuration",
+      "params": [],
+      "category": "OSPF",
+      "tags": ["ospf", "routing", "protocol"]
+    },
+    "ospf_post": {
+      "id": "eos_rest_ospf_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/ospf",
+      "description": "Create OSPF configuration",
+      "params": ["process-id", "router-id", "areas"],
+      "category": "OSPF",
+      "tags": ["ospf", "routing", "protocol"]
+    },
+    "system_get": {
+      "id": "eos_rest_system_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/system",
+      "description": "Get system information",
+      "params": [],
+      "category": "System Information",
+      "tags": ["system", "status", "information"]
+    },
+    "system_put": {
+      "id": "eos_rest_system_put_PUT",
+      "service": "eos_rest",
+      "method": "PUT",
+      "path": "/system",
+      "description": "Update system configuration",
+      "params": ["hostname", "description", "location"],
+      "category": "System Information",
+      "tags": ["system", "configuration", "settings"]
+    },
+    "users_get": {
+      "id": "eos_rest_users_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/users",
+      "description": "Get user accounts",
+      "params": [],
+      "category": "User Management",
+      "tags": ["users", "accounts", "authentication"]
+    },
+    "users_post": {
+      "id": "eos_rest_users_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/users",
+      "description": "Create user account",
+      "params": ["username", "password", "role", "privilege"],
+      "category": "User Management",
+      "tags": ["users", "accounts", "authentication"]
+    },
+    "snmp_get": {
+      "id": "eos_rest_snmp_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/snmp",
+      "description": "Get SNMP configuration",
+      "params": [],
+      "category": "SNMP",
+      "tags": ["snmp", "monitoring", "management"]
+    },
+    "snmp_post": {
+      "id": "eos_rest_snmp_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/snmp",
+      "description": "Create SNMP configuration",
+      "params": ["community", "host", "version"],
+      "category": "SNMP",
+      "tags": ["snmp", "monitoring", "management"]
+    },
+    "ntp_get": {
+      "id": "eos_rest_ntp_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/ntp",
+      "description": "Get NTP configuration",
+      "params": [],
+      "category": "NTP",
+      "tags": ["ntp", "time", "synchronization"]
+    },
+    "ntp_post": {
+      "id": "eos_rest_ntp_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/ntp",
+      "description": "Create NTP configuration",
+      "params": ["servers", "source-interface"],
+      "category": "NTP",
+      "tags": ["ntp", "time", "synchronization"]
+    },
+    "logging_get": {
+      "id": "eos_rest_logging_get_GET",
+      "service": "eos_rest",
+      "method": "GET",
+      "path": "/logging",
+      "description": "Get logging configuration",
+      "params": [],
+      "category": "Logging",
+      "tags": ["logging", "syslog", "monitoring"]
+    },
+    "logging_post": {
+      "id": "eos_rest_logging_post_POST",
+      "service": "eos_rest",
+      "method": "POST",
+      "path": "/logging",
+      "description": "Create logging configuration",
+      "params": ["servers", "facility", "level"],
+      "category": "Logging",
+      "tags": ["logging", "syslog", "monitoring"]
+    }
+  },
+  "telemetry": {
+    "telemetry_subscriptions_get": {
+      "id": "telemetry_subscriptions_get_GET",
+      "service": "telemetry",
+      "method": "GET",
+      "path": "/telemetry/subscriptions",
+      "description": "Get telemetry subscriptions",
+      "params": [],
+      "category": "Telemetry",
+      "tags": ["telemetry", "streaming", "monitoring"]
+    },
+    "telemetry_subscriptions_post": {
+      "id": "telemetry_subscriptions_post_POST",
+      "service": "telemetry",
+      "method": "POST",
+      "path": "/telemetry/subscriptions",
+      "description": "Create telemetry subscription",
+      "params": ["name", "paths", "destination"],
+      "category": "Telemetry",
+      "tags": ["telemetry", "streaming", "monitoring"]
+    },
+    "telemetry_sensors_get": {
+      "id": "telemetry_sensors_get_GET",
+      "service": "telemetry",
+      "method": "GET",
+      "path": "/telemetry/sensors",
+      "description": "Get telemetry sensors",
+      "params": [],
+      "category": "Telemetry",
+      "tags": ["telemetry", "sensors", "monitoring"]
+    },
+    "telemetry_destinations_get": {
+      "id": "telemetry_destinations_get_GET",
+      "service": "telemetry",
+      "method": "GET",
+      "path": "/telemetry/destinations",
+      "description": "Get telemetry destinations",
+      "params": [],
+      "category": "Telemetry",
+      "tags": ["telemetry", "destinations", "monitoring"]
+    },
+    "telemetry_destinations_post": {
+      "id": "telemetry_destinations_post_POST",
+      "service": "telemetry",
+      "method": "POST",
+      "path": "/telemetry/destinations",
+      "description": "Create telemetry destination",
+      "params": ["name", "type", "host", "port"],
+      "category": "Telemetry",
+      "tags": ["telemetry", "destinations", "monitoring"]
+    }
+  }
+}

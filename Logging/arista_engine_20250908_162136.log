@@ -1,0 +1,3 @@
+{"level":"info","timestamp":"2025-09-08T16:21:36.718-0700","caller":"Arista_Engine/app.go:60","msg":"Initializing database","path":"data.db"}
+{"level":"info","timestamp":"2025-09-08T16:21:36.722-0700","caller":"Arista_Engine/app.go:66","msg":"Database initialized successfully"}
+{"level":"error","timestamp":"2025-09-08T16:21:36.722-0700","caller":"Arista_Engine/app.go:81","msg":"Failed to initialize NetVisor database","error":"failed to ping NetVisor database: Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub","stacktrace":"main.NewApp\n\tD:/DevOps/Arista_Engine/app.go:81\nmain.main\n\tD:/DevOps/Arista_Engine/main.go:16\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:285"}

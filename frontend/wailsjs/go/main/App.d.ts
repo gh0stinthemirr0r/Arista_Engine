@@ -1,0 +1,18 @@
+export function GetEndpoints(): Promise<any[]>;
+export function AddEndpoint(endpoint: any): Promise<void>;
+export function UpdateEndpoint(endpoint: any): Promise<void>;
+export function DeleteEndpoint(endpointId: string): Promise<void>;
+export function TestConnection(endpointId: string): Promise<any>;
+export function TestAPIConnection(apiType: string, url: string, username: string, password: string, token: string): Promise<any>;
+export function GetAPICatalog(): Promise<any>;
+export function GetEndpointsByService(service: string): Promise<any>;
+export function SearchEndpoints(query: string): Promise<any[]>;
+export function RunAPIRequest(request: any): Promise<any>;
+export function GetQueryLog(): Promise<any[]>;
+export function ExportResults(format: string, data: any[]): Promise<string>;
+export function GetDeviceInventory(): Promise<any[]>;
+export function ServeDeviceInventory(): Promise<any[]>;
+export function GetNetVisorAPIs(): Promise<any[]>;
+export function GetNetVisorAPIsByService(service: string): Promise<any[]>;
+export function SearchNetVisorAPIs(keyword: string): Promise<any[]>;
+export function GetNetVisorTables(): Promise<string[]>;

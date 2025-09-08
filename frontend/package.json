@@ -1,0 +1,19 @@
+{
+  "name": "arista-engine-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "svelte": "^4.2.7",
+    "vite": "^4.4.2"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.44.0"
+  }
+}
