@@ -1,6 +1,29 @@
 # ⚡ Arista Engine
 *A Cyberpunk-Themed Arista Networks API GUI (Go + Wails)*
 
+
+## 📸 Screenshots
+
+### Start Screen
+![Start](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_start.png?raw=true)
+
+### Endpoint Manager
+![Endpoints](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_endpoints.png?raw=true)
+
+### API Catalog
+![API Catalog](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_apicatalog.png?raw=true)
+
+### Query Log
+![Query Log](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_querylog.png?raw=true)
+
+### Inventory
+![Inventory](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_inventory.png?raw=true)
+
+### API Connection Manager
+![API Connection Manager](https://github.com/gh0stinthemirr0r/Arista_Engine/blob/main/screenshots/Arista_Engine_apiconnectionmanager.png?raw=true)
+
+
+
 ![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8)
 ![UI](https://img.shields.io/badge/UI-Cyberpunk%20Neon-pink)
 ![API](https://img.shields.io/badge/Arista-API%20Coverage-green)
